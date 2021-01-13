@@ -1,3 +1,33 @@
-h1{
-    
+.container{
+    background-color: greenyellow;
+    border-style: solid;
+    border-radius: 5px;
+    display: grid;
+    width: 70%;
+    grid-template-areas: 
+    "header header header"
+    "   .   whatis   .   "
+    "   .   motiva   .   "
+    "   .   explan   .   "
+    "   .   footer   .   ";
+}
+
+header{
+    grid-area: header;
+}
+
+#what_is_tbb{
+    grid-area: whatis;
+}
+
+#motivation{
+    grid-area: motiva;
+}
+
+#explain{
+    grid-area: explan;
+}
+
+footer{
+    grid-area: footer;
 }
