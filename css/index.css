@@ -9,11 +9,10 @@ body{
 
 .container{
     margin-top: 20px;
- 
     border-style: solid;
     border-radius: 5px;
     display: grid;
-    width: 70%;
+    width: 40%;
     grid-template-areas: 
     "header header header"
     "   .   whatis   .   "
@@ -27,7 +26,6 @@ header{
 }
 
 #what_is_tbb{
-    
     grid-area: whatis;
     text-align: center;
 }
@@ -45,16 +43,32 @@ footer{
     grid-area: footer;
 }
 
-.intro_question{
+.question_block{
     border-style: solid;
     background-color: greenyellow;
     border-radius: 10px;
     border-color: var(--question-color);
-    padding: 8px;
-    width: 180px;
+    margin-bottom: 30px;
+    place-items: center;
+    padding: 12px 24px;
+}
+
+.question_num{
+    font-size: 36px;
+}
+
+.intro_question{
+    display: block;
+    margin: 20px;
+    border-bottom: 1px solid;
+    margin: 20;
 }
 
 .intro_answer{
+}
 
-    
+@media screen and (max-width: 768px){
+    .container{
+        width: 70%;
+    }
 }
