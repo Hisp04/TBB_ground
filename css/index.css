@@ -1,5 +1,15 @@
+:root{
+    --background-color-content: greenyellow;
+    --question-color: #6491eb;
+}
+
+body{
+    font-family: 'Jua';
+}
+
 .container{
-    background-color: greenyellow;
+    margin-top: 20px;
+ 
     border-style: solid;
     border-radius: 5px;
     display: grid;
@@ -17,7 +27,9 @@ header{
 }
 
 #what_is_tbb{
+    
     grid-area: whatis;
+    text-align: center;
 }
 
 #motivation{
@@ -29,5 +41,20 @@ header{
 }
 
 footer{
+    margin-top: 20px;
     grid-area: footer;
+}
+
+.intro_question{
+    border-style: solid;
+    background-color: greenyellow;
+    border-radius: 10px;
+    border-color: var(--question-color);
+    padding: 8px;
+    width: 180px;
+}
+
+.intro_answer{
+
+    
 }
