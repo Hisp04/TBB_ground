@@ -50,6 +50,7 @@ a{
 
 .navbar_list li{
     padding: 8px 12px;
+    font-size: 20px;
 }
 
 .navbar_list li:hover{
@@ -61,6 +62,7 @@ a{
     display: none;
     position: absolute;
     right: 32px;
+    top: 12.5px;
     font-size: 24px;
     color: var(--accent-color);
 }
@@ -70,6 +72,10 @@ a{
         flex-direction: column;
         align-items: flex-start;
         padding: 8px 24px;
+    }
+
+    .navbar_logo{
+        font-size: 32px;
     }
 
     .navbar_list{
@@ -92,6 +98,8 @@ a{
 
     .navbar_toggleBtn{
         display: block;
+        text-align: center;
+        font-size: 32px;
     }
 
     .navbar_list.active,
